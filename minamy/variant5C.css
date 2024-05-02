@@ -1,0 +1,24 @@
+/* テーブルのベーススタイル */
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td, th {
+    width: 36px; /* 各セルの幅を均一に設定 */
+    border: 1px solid #aaaaaa;
+    padding: 3px;
+    text-align: right;
+}
+
+/* 最初の行と最初の列を設定 */
+tr:first-child, td:first-child {
+    color: #eeffaa;
+    font-weight: bold;
+    background-color: #009900;
+}
+
+/* ハイライトスタイル */
+tr td.highlight, tr.highlight td {
+    background-color: #eeffaa; /* セルのハイライト色を設定 */
+}
